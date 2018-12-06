@@ -1,3 +1,4 @@
+// @flow
 import ExponentConstants from './ExponentConstants';
 if (!ExponentConstants) {
     console.warn("No native ExponentConstants module found, are you sure the expo-constants's module is linked properly?");
@@ -10,7 +11,7 @@ if (ExponentConstants && ExponentConstants.manifest) {
         manifest = JSON.parse(manifest);
     }
 }
-export default {
+export const Constants = {
     ...ExponentConstants,
     manifest,
     // Legacy aliases

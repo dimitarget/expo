@@ -14,7 +14,7 @@ try {
 }
 
 try {
-  Constants = require('expo-constants').default;
+  Constants = require('expo-constants').Constants;
 } catch (error) {
   throw new Error('`expo-asset` requires `expo-constants` package to be installed and linked.');
 }

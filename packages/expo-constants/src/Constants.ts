@@ -1,3 +1,4 @@
+// @flow
 import ExponentConstants from './ExponentConstants';
 
 if (!ExponentConstants) {
@@ -15,7 +16,7 @@ if (ExponentConstants && ExponentConstants.manifest) {
   }
 }
 
-export default {
+export const Constants = {
   ...ExponentConstants,
   manifest,
   // Legacy aliases
